@@ -273,6 +273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783715881}
   - component: {fileID: 1783715880}
+  - component: {fileID: 1783715882}
   m_Layer: 0
   m_Name: Gamecontroller
   m_TagString: Untagged
@@ -293,7 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerPos: {fileID: 1783715881}
-  Cube: {fileID: 753024303820292580, guid: 2cff79b83f04771419f54fb16f2afaac, type: 3}
+  Cube: {fileID: 100000, guid: e9aa3775e88798c4086fe26d5f35737b, type: 3}
 --- !u!4 &1783715881
 Transform:
   m_ObjectHideFlags: 0
@@ -308,3 +309,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783715882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783715879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac35fad72030d54db41250f145c63e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
