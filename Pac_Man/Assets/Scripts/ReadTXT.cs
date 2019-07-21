@@ -11,10 +11,10 @@ public class ReadTXT : MonoBehaviour
 
     public string[,] Read()
     {
-        _text = Resources.Load("TerrianData") as TextAsset;
+        _text = Resources.Load("map_Stage1") as TextAsset;
         string str = _text.text;
         string[] row = str.Split('\n');
-        data = new string[row.Length, row[0].Length];
+        data = new string[row.Length, row[0].Split(',').Length];
         for (int i = 0; i < row.Length; i++)
         {
             string debugstr = "";
@@ -24,6 +24,7 @@ public class ReadTXT : MonoBehaviour
                 data[i, j] = tile[j];
                 debugstr += data[i, j];
             }
+               // Debug.Log(debugstr);
         }
         return data;
     }
